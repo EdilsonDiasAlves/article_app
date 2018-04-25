@@ -1,19 +1,38 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/articles', function(req, res, next) {
-  res.end('Get details of all articles');
+var mongoose = require('mongoose');
+var Article = mongoose.model('Article');
+
+router.get('/articles', function(req, res, next){
+  Article.find(function(err, articles){
+    if(err){
+      return res.send(500, err);
+    }
+    return res.json(articles);
+  });
 });
 
-router.get('/articles/:id', function(req, res, next) {
-  res.end('Get details of article with id: ' + req.params.id);
+router.get('/articles/:id',  function(req, res, next){
+  Article.findById(req.params.id, function(err, article){
+    if(err){
+      res.send(err);
+    }
+    res.json(article);
+  });
 });
 
-router.post('/articles/:id', function(req, res, next) {
-  res.end('Store details of article with id ' + req.params.id + ' in the database');
+router.post('/articles', function(req, res, next) {
+  var article = new Article();
+  article.username = req.body.username;
+  article.title = req.body.title;
+  article.text = req.body.text;
+  article.save(function(err, article){
+    if(err){
+      return res.send(500, err);
+    }
+    return res.json(article);
+  });
 });
 
-router.put('/articles/:id', function(req, res, next) {
-  res.end('Update the details of article with id ' + req.params.id + ' in the database');
-});
 module.exports = router;
