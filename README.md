@@ -1,7 +1,7 @@
 # estudos_pessoais
 repositório para armazenamento de projetos pessoais/ estudos/ aplicações rápidas e outras coisas do gênero.  
 
-## Projeto 1 - Articles App
+## Projeto 1 - Article App
 
 ### Descrição:
 Projeto com MEAN onde você pode criar e visualizar artigos.  
