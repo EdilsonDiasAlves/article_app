@@ -1,4 +1,4 @@
-# mean_angularjs
+# articleApp
 aplicação de artigos, utilizando mongodb, express, angularjs e node.
 
 ## Descrição:
