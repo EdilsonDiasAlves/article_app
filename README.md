@@ -1,12 +1,12 @@
 # articleApp
-aplicação de artigos, utilizando mongodb, express, angularjs e node.
+application of articles, using mongodb, express, angularjs and node.
 
-## Descrição:
-Projeto com MEAN onde você pode criar e visualizar artigos.  
+## Description:
+Project with MEAN where you can create and view articles.
 
-## Passos para inicializar:
-1. Clonar o repositório.  
-2. Navegar até o diretório estudos_pessoais/mean/articleApp/articles.  
-3. Digitar o comando npm install no prompt de comando para instalar todos os módulos.  
-4. Após a instalação, digitar o comando npm start no prompt.  
-5. Após o comando acima, a aplicação estará de pé. No seu browser de preferência, acesse http://localhost:3000.  
+## Steps:
+1. Clone the repository.  
+2. Navigate to directory estudos_pessoais/mean/articleApp/articles.  
+3. Enter the npm install command at the command prompt to install all the modules.  
+4. After installation, enter the command npm start at the prompt.
+5. After the above command, the application will be standing. In your preferred browser, go to http://localhost:3000.  
